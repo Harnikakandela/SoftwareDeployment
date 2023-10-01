@@ -1,0 +1,33 @@
+// Author: Harnika Kandela
+import java.util.Scanner;
+
+public class LetterGrade {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Prompt the user to enter the numeric grade
+        System.out.print("Enter the numeric grade: ");
+        int numericGrade = scanner.nextInt();
+        
+        // Calculate the letter grade
+        String letterGrade = calculateLetterGrade(numericGrade);
+        
+        // Display the letter grade
+        System.out.println("The letter grade is: " + letterGrade);
+    }
+    
+    // Method to calculate the letter grade based on numeric grade
+    public static String calculateLetterGrade(int numericGrade) {
+        if (numericGrade >= 90) {
+            return "A";
+        } else if (numericGrade >= 80) {
+            return "B";
+        } else if (numericGrade >= 70) {
+            return "C";
+        } else if (numericGrade >= 60) {
+            return "D";
+        } else {
+            return "E";
+        }
+    }
+}
