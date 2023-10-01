@@ -16,18 +16,26 @@ public class LetterGrade {
         System.out.println("The letter grade is: " + letterGrade);
     }
     
-    // Method to calculate the letter grade based on numeric grade
-    public static String calculateLetterGrade(int numericGrade) {
-        if (numericGrade >= 90) {
-            return "A";
-        } else if (numericGrade >= 80) {
-            return "B";
-        } else if (numericGrade >= 70) {
-            return "C";
-        } else if (numericGrade >= 60) {
-            return "D";
-        } else {
-            return "E";
-        }
+       // Modification that includes the options of A+, B+, C+, D+ based on the 
+    // specified numeric grade ranges.
+   public static String calculateLetterGrade(int numericGrade) 
+  {
+    if (numericGrade >= 95) {
+        return "A+";
+    } else if (numericGrade >= 90) {
+        return "A";
+    } else if (numericGrade >= 85) {
+        return "B+";
+    } else if (numericGrade >= 80) {
+        return "B";
+    } else if (numericGrade >= 75) {
+        return "C+";
+    } else if (numericGrade >= 70) {
+        return "C";
+    } else if (numericGrade >= 65) {
+        return "D+";
+    } else {
+        return "D";
     }
+  }
 }
